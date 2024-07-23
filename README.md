@@ -63,6 +63,7 @@ Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de 
 
 ### Observações
 
+- Infelizmente ainda não temos o mockup dessa interface, mas você pode se inspirar em sites como [facebook](https://www.facebook.com/), [instagram](https://www.instagram.com/) e [twitter(X)](https://x.com/).  
 - Como não possuímos API para criação, edição e remoção dos posts, essas alterações podem ser persistidas apenas em um estado local. (Não é necessário persistir as alterações caso a página seja recarregada)
 
 ### Restrições
