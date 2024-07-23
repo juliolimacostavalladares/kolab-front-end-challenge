@@ -26,7 +26,8 @@ Utilizar a api [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.t
 4. **Perfil**
 
    Deve existir uma página para visualizar e editar os dados do usuário atual.
-	   - Não precisa implementar um mecanismo de autenticação. Pode assumir que já temos um usuário autenticado ao acessar a aplicação.
+   
+   - Não precisa implementar um mecanismo de autenticação. Pode deixar hardcoded o usuário autenticado.
 
 ### Critérios de Avaliação
 
