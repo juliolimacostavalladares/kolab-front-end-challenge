@@ -82,6 +82,7 @@ Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de 
 - Inclua um arquivo README com instruções de como rodar a aplicação.
 - O prazo sugerido para realizar o desafio é de uma semana. Caso precise de mais tempo, não tem problema, é só nos avisar.
 
-Queremos incentivá-lo a enviar o teste mesmo que não esteja completo. O que mais valorizamos é a sua abordagem ao problema, o seu processo de pensamento e a qualidade do trabalho que você conseguiu completar. Isso nos dará uma excelente visão das suas habilidades e do seu potencial.
+>[!IMPORTANT]
+>Queremos incentivá-lo a enviar o teste mesmo que não esteja completo. O que mais valorizamos é a sua abordagem ao problema, o seu processo de pensamento e a qualidade do trabalho que você conseguiu completar. Isso nos dará uma excelente visão das suas habilidades e do seu potencial.
 
 Estamos ansiosos para ver o seu trabalho e conhecer mais sobre sua forma de resolver problemas.
