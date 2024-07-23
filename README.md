@@ -63,7 +63,7 @@ Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de 
 
 ### Observações
 
-- Infelizmente ainda não temos o mockup dessa interface, mas você pode se inspirar em sites como [facebook](https://www.facebook.com/), [instagram](https://www.instagram.com/) e [twitter(X)](https://x.com/).  
+- Você pode se inspirar em sites como [facebook](https://www.facebook.com/), [instagram](https://www.instagram.com/) e [twitter(X)](https://x.com/) para construir o layout da aplicação.  
 - Como não possuímos API para criação, edição e remoção dos posts, essas alterações podem ser persistidas apenas em um estado local. (Não é necessário persistir as alterações caso a página seja recarregada)
 
 ### Restrições
@@ -80,7 +80,7 @@ Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de 
 
 - O desafio pode ser compartilhado como um repositório no GitHub ou enviado em um arquivo compactado.
 - Inclua um arquivo README com instruções de como rodar a aplicação.
-- O prazo para realizar o desafio é de uma semana. Caso surja algum imprevisto e precise de mais tempo, por favor, nos avise.
+- O prazo sugerido para realizar o desafio é de uma semana. Caso precise de mais tempo, não tem problema, é só nos avisar.
 
 Queremos incentivá-lo a enviar o teste mesmo que não esteja completo. O que mais valorizamos é a sua abordagem ao problema, o seu processo de pensamento e a qualidade do trabalho que você conseguiu completar. Isso nos dará uma excelente visão das suas habilidades e do seu potencial.
 
