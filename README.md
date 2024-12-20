@@ -13,7 +13,7 @@ Utilizar a api [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.t
      - Conteúdo do post
      - Autor do post
      - Comentários do post (a relação entre comentários e usuários pode ser aleatorizada, já que a API não fornece essa informação).
-    - Deve ser possível criar, editar ou remover um comentário de um post
+    - Deve ser possível criar, editar ou remover um comentário de um post desde que seja do usuário criador
 
 2. **Posts de um usuário**
 
