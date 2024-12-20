@@ -47,8 +47,8 @@ Utilizar a api [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.t
 
    A aplicação deve funcionar em diferentes tamanhos de tela
 
-
-### ⚠️ LEMBRE-SE: FUNCIONAR É ESSENCIAL ⚠️
+>[!IMPORTANT]
+>⚠️ LEMBRE-SE: FUNCIONAR É ESSENCIAL ⚠️
 
 ### Bônus
 
