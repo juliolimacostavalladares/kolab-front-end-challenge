@@ -48,6 +48,8 @@ Utilizar a api [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.t
    A aplicação deve funcionar em diferentes tamanhos de tela
 
 
+### ⚠️ LEMBRE-SE: FUNCIONAR É ESSENCIAL ⚠️
+
 ### Bônus
 
 Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de verdade... Mas se quiser ir além, sinta-se a vontade para demostrar seu conhecimento ou aprender!
