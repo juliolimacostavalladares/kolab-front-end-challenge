@@ -1,90 +1,50 @@
-## Kolab - Desafio Técnico Frontend
+# React + TypeScript + Vite
 
-### Objetivo
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Construir um feed de posts utilizando React e Typescript.
-Utilizar a api [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/) para buscar os usuários, posts e comentários. 
+Currently, two official plugins are available:
 
-### Funcionalidades Requeridas
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-1. **Feed de Posts**
-   
-   A home page da aplicação deve listar posts dos usuários em um feed, contendo:
-     - Conteúdo do post
-     - Autor do post
-     - Comentários do post (a relação entre comentários e usuários pode ser aleatorizada, já que a API não fornece essa informação).
-    - Deve ser possível criar, editar ou remover um comentário de um post desde que seja do usuário criador
+## Expanding the ESLint configuration
 
-2. **Posts de um usuário**
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-   Clicar em um usuário deve levar a uma página que mostra os posts do usuário
+- Configure the top-level `parserOptions` property like this:
 
-3. **Gerenciamento de posts**
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-   O usuário deve conseguir cadastrar novos posts. Ele também deve conseguir editar e remover estes posts.
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-4. **Perfil**
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-   Deve existir uma página para visualizar e editar os dados do usuário atual.
-   
-   - Não precisa implementar um mecanismo de autenticação. Pode deixar hardcoded o usuário autenticado.
-
-### Critérios de Avaliação
-
-1. **Funcionalidade**
-   
-   A aplicação atende a todos os requisitos descritos acima.
-
-2. **Código**
-   
-   Clareza, organização, boas práticas e performance da aplicação.
-
-4. **Usabilidade**
-   
-   Acessibilidade, facilidade de uso e experiência do usuário.
-
-5. **Responsividade**
-
-   A aplicação deve funcionar em diferentes tamanhos de tela
-
->[!IMPORTANT]
->⚠️ LEMBRE-SE: FUNCIONAR É ESSENCIAL ⚠️
-
-### Bônus
-
-Caso você tenha feito as funcionalidades requisitadas acima, já está bom, de verdade... Mas se quiser ir além, sinta-se a vontade para demostrar seu conhecimento ou aprender!
-
-- Adicionar imagens aos posts.
-- Adicionar avatar aos usuários.
-- Busca de usuários por nome.
-- Permitir que o usuário selecione e remova vários posts de uma só vez.
-- Testes automatizados (unitários e/ou end-to-end).
-- Gerenciamento de erros.
-- Storybook.
-- Localização (i18n).
-
-### Observações
-
-- Você pode se inspirar em sites como [facebook](https://www.facebook.com/), [instagram](https://www.instagram.com/) e [twitter(X)](https://x.com/) para construir o layout da aplicação.  
-- Como não possuímos API para criação, edição e remoção dos posts, essas alterações podem ser persistidas apenas em um estado local. (Não é necessário persistir as alterações caso a página seja recarregada)
-
-### Restrições
-
-- A aplicação deve ser um SPA (Single Page Application)
-- Utilizar React e Typescript
-
-   Fora isso, o desenvolvedor tem liberdade para utilizar bibliotecas e frameworks adicionais. Caso esteja em dúvida ou não possua uma preferência, a stack que utilizamos hoje consiste predominantemente em:
-   - React Router
-   - ChakraUI
-   - Tanstack Query
-
-### Entrega
-
-- O desafio pode ser compartilhado como um repositório no GitHub ou enviado em um arquivo compactado.
-- Inclua um arquivo README com instruções de como rodar a aplicação.
-- O prazo sugerido para realizar o desafio é de uma semana. Caso precise de mais tempo, não tem problema, é só nos avisar.
-
->[!IMPORTANT]
->Queremos incentivá-lo a enviar o teste mesmo que não esteja completo. O que mais valorizamos é a sua abordagem ao problema, o seu processo de pensamento e a qualidade do trabalho que você conseguiu completar. Isso nos dará uma excelente visão das suas habilidades e do seu potencial.
-
-Estamos ansiosos para ver o seu trabalho e conhecer mais sobre sua forma de resolver problemas.
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
