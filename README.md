@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Kolab - Desafio Técnico Frontend - Julio Valladares
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação front-end utilizando **React**, **TypeScript**, e **Vite** 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta moderna para construção de aplicações web.
+- **Axios**: Para realizar requisições HTTP de maneira simplificada.
+- **React Router**: Para gerenciamento de navegação entre páginas.
+- **ChakraUI**: Para componentes UI prontos e acessíveis.
+- **Tanstack Query**: Para gerenciar dados assíncronos com cache e sincronização automática.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Pré-requisitos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Certifique-se de ter os seguintes softwares instalados:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [Node.js](https://nodejs.org/) (versão recomendada: 16 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🛠️ Configuração do Projeto
+
+1. Clone este repositório para sua máquina:
+
+    ```bash
+    git clone https://github.com/juliolimacostavalladares/kolab-front-end-challenge.git
+    cd seu-repositorio
+    ```
+
+2. Instale as dependências do projeto:
+
+    Usando npm:
+    ```bash
+    npm install
+    ```
+
+    Ou usando yarn:
+    ```bash
+    yarn install
+    ```
+
+---
+
+## 🚀 Rodando o Projeto
+
+Para iniciar o projeto em modo de desenvolvimento, execute o seguinte comando:
+
+Usando npm:
+```bash
+  npm run dev
+  ```
+Ou usando yarn:
+```bash
+  yarn dev
+  ```
