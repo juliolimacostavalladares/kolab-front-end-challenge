@@ -30,7 +30,7 @@ Certifique-se de ter os seguintes softwares instalados:
 1. Clone este repositório para sua máquina:
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/juliolimacostavalladares/kolab-front-end-challenge.git
     cd seu-repositorio
     ```
 
